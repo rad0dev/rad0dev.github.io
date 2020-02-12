@@ -3,19 +3,26 @@
   "version": "1.0.0",
   "description": "frontend developer portfolio",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "prod": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rad0dev/rad0dev.github.io.git"
   },
   "author": {
-    "name" : "Radoslaw Olejniczak",
-    "url" : "https://github.com/rad0dev"
+    "name": "Radoslaw Olejniczak",
+    "url": "https://github.com/rad0dev"
   },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rad0dev/rad0dev.github.io/issues"
   },
-  "homepage": "https://github.com/rad0dev/rad0dev.github.io#readme"
+  "homepage": "https://github.com/rad0dev/rad0dev.github.io#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
 }
