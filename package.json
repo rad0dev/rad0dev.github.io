@@ -4,7 +4,8 @@
   "description": "frontend developer portfolio",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.js",
-    "prod": "webpack"
+    "prod": "webpack",
+    "lint": "eslint src"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,8 @@
   "homepage": "https://github.com/rad0dev/rad0dev.github.io#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^6.8.0",
+    "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
