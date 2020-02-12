@@ -1,6 +1,6 @@
 import { template } from './template'
 
-export const AppComponent = {
+export const component = {
   init() {
     this.appElement = document.querySelector('#app')
     this.render()
