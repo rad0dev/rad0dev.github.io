@@ -1,0 +1,38 @@
+.aboutMe {
+    display: flex;
+    width: 1140px;
+    padding: 0 15px;
+    margin: 20px auto;
+}
+
+.avatar img {
+    width: 140px;
+    height: 140px;
+    margin-right: 40px;
+    border-radius: 9999px;
+}
+
+.aboutInfo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutInfo h1 {
+    font-size: 45px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.aboutInfo h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.aboutInfo ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

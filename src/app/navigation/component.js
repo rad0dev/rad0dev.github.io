@@ -1,3 +1,5 @@
+import styles from './style.css'
+
 export class MyNavigation extends HTMLElement {
   constructor() {
     super()
@@ -5,7 +7,18 @@ export class MyNavigation extends HTMLElement {
   }
 
   async render() {
-    this.attachShadow({mode: 'open'})
-    this.shadowRoot.innerHTML = `<h1>Navigation</h1>`
+    const header = document.createElement('header')
+    header.innerHTML = `
+        <div class="${styles.logo}">
+            <a href="/">rad0dev</a>
+        </div>
+        <nav class="${styles.menu}">
+            <ul>
+                <li><a href="#">My repositories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    `
+    this.appendChild(header)
   }
 }
