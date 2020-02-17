@@ -3,7 +3,10 @@ import { library, icon } from '@fortawesome/fontawesome-svg-core'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 library.add(faGithub)
-const iconGithub = icon({ prefix: 'fab', iconName: 'github' })
+const iconGithub = icon({
+  prefix: 'fab',
+  iconName: 'github'
+})
 
 export class MyAbout extends HTMLElement {
   constructor() {
@@ -14,6 +17,7 @@ export class MyAbout extends HTMLElement {
   async render() {
     const header = document.createElement('div')
     header.className = styles.aboutMe
+    console.log(iconGithub)
     header.innerHTML = `
         <div class="${styles.avatar}"><img src="../../img/radoslaw-olejniczak.jpeg" alt="Radoslaw Olejniczak"></div>
         <div class="${styles.aboutInfo}">

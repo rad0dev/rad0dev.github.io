@@ -19,20 +19,29 @@
     flex-direction: column;
 }
 
+.aboutInfo h1,
+.aboutInfo h2 {
+    margin: 5px 0;
+}
+
 .aboutInfo h1 {
-    font-size: 45px;
+    font-size: 52px;
     font-weight: 900;
-    margin: 0;
 }
 
 .aboutInfo h2 {
     font-size: 32px;
-    margin: 0;
+    color: #999;
 }
 
 .aboutInfo ul {
     display: flex;
-    margin: 0;
+    margin: 10px 0;
     padding: 0;
     list-style: none;
+    font-size: 22px;
+}
+
+.aboutInfo ul a {
+    color: #000;
 }
