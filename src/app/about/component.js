@@ -15,10 +15,10 @@ export class MyAbout extends HTMLElement {
   }
 
   async render() {
-    const header = document.createElement('div')
-    header.className = styles.aboutMe
+    const container = document.createElement('div')
+    container.className = styles.aboutme
     console.log(iconGithub)
-    header.innerHTML = `
+    container.innerHTML = `
         <div class="${styles.avatar}"><img src="../../img/radoslaw-olejniczak.jpeg" alt="Radoslaw Olejniczak"></div>
         <div class="${styles.info}">
             <h1>Radosław Olejniczak</h1>
@@ -28,6 +28,6 @@ export class MyAbout extends HTMLElement {
             </ul>
         </div>
     `
-    this.appendChild(header)
+    this.appendChild(container)
   }
 }

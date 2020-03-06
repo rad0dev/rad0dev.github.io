@@ -7,7 +7,7 @@ export class MyFooter extends HTMLElement {
   }
 
   async render() {
-    const footer = document.createElement('div')
+    const footer = document.createElement('footer')
     footer.className = styles.footer;
     footer.innerText = '© 2020 Radosław Olejniczak'
     this.appendChild(footer)
