@@ -12,29 +12,29 @@
     border-radius: 9999px;
 }
 
-.aboutInfo {
+.info {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
 }
 
-.aboutInfo h1,
-.aboutInfo h2 {
+.info h1,
+.info h2 {
     margin: 5px 0;
 }
 
-.aboutInfo h1 {
+.info h1 {
     font-size: 52px;
     font-weight: 900;
 }
 
-.aboutInfo h2 {
+.info h2 {
     font-size: 32px;
     color: #999;
 }
 
-.aboutInfo ul {
+.info ul {
     display: flex;
     margin: 10px 0;
     padding: 0;
@@ -42,6 +42,6 @@
     font-size: 22px;
 }
 
-.aboutInfo ul a {
+.info ul a {
     color: #000;
 }

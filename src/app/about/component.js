@@ -20,7 +20,7 @@ export class MyAbout extends HTMLElement {
     console.log(iconGithub)
     header.innerHTML = `
         <div class="${styles.avatar}"><img src="../../img/radoslaw-olejniczak.jpeg" alt="Radoslaw Olejniczak"></div>
-        <div class="${styles.aboutInfo}">
+        <div class="${styles.info}">
             <h1>Radosław Olejniczak</h1>
             <h2>Frontend Developer</h2>
             <ul>
