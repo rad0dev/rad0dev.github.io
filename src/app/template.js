@@ -1,5 +1,5 @@
 import 'normalize.css'
-import '../style.css'
+import '../style.scss'
 
 export const template = `
   <my-navigation></my-navigation>

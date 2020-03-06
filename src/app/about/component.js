@@ -1,4 +1,4 @@
-import styles from './style.css'
+import styles from './style.scss'
 import { library, icon } from '@fortawesome/fontawesome-svg-core'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
