@@ -15,6 +15,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     }),
+    new HtmlWebpackPlugin({
+      template: 'src/my-repositories/index.html',
+      filename: "my-repositories/index.html"
+    }),
     new CopyPlugin([
       {
         from: path.resolve(__dirname, 'src/img'),

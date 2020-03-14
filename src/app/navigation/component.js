@@ -14,7 +14,7 @@ export class MyNavigation extends HTMLElement {
         </div>
         <nav class="${styles.menu}">
             <ul>
-                <li><a href="#">My repositories</a></li>
+                <li><a href="my-repositories/index.html">My repositories</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
