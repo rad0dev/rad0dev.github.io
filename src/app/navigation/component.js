@@ -8,6 +8,7 @@ export class MyNavigation extends HTMLElement {
 
   async render() {
     const header = document.createElement('header')
+    header.classList.add(styles.header)
     header.innerHTML = `
         <div class="${styles.logo}">
             <a href="/">rad0dev</a>

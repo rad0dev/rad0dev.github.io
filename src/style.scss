@@ -12,12 +12,13 @@ html, body {
 
 body {
     font-family: 'Lato', sans-serif;
+    color: #333;
 }
 
 .portfolio {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     height: 100%;
 }

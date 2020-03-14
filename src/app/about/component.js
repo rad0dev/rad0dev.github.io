@@ -17,7 +17,6 @@ export class MyAbout extends HTMLElement {
   async render() {
     const container = document.createElement('div')
     container.className = styles.aboutme
-    console.log(iconGithub)
     container.innerHTML = `
         <div class="${styles.avatar}"><img src="../../img/radoslaw-olejniczak.jpeg" alt="Radoslaw Olejniczak"></div>
         <div class="${styles.info}">
