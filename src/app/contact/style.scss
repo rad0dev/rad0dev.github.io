@@ -1,0 +1,26 @@
+.myContact {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  text-align: center;
+}
+
+.cta {
+  font-size: 32px;
+  color: #999;
+  cursor: pointer;
+
+  &.clicked {
+    cursor: auto;
+  }
+
+  a {
+    font-size: 52px;
+    color: #333;
+    text-decoration: none;
+  }
+}
