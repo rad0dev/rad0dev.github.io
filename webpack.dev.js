@@ -23,6 +23,10 @@ module.exports = {
       template: 'src/contact/index.html',
       filename: "contact/index.html"
     }),
+    new HtmlWebpackPlugin({
+      template: 'src/cv/index.html',
+      filename: "cv/index.html"
+    }),
     new CopyPlugin([
       {
         from: path.resolve(__dirname, 'src/img'),

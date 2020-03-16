@@ -10,7 +10,7 @@ export class MyRepostitories extends HTMLElement {
 
   async render() {
     const repos = (await getRepos());
-    this.classList.add(styles.myRepositories)
+    this.classList.add(globalStyles.mainFlexItem)
     this.innerHTML = (`
       <div class="${globalStyles.container}">
         <ul class="${styles.reposList}">

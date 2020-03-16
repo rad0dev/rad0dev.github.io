@@ -5,6 +5,7 @@ import initFooter from './footer'
 import initRepositories from './repositories'
 import initHeader from './header'
 import initContact from './contact'
+import initCV from './cv'
 
 export const App = {
   init() {
@@ -14,6 +15,7 @@ export const App = {
     initRepositories()
     initHeader()
     initContact()
+    initCV()
     this.initComponents()
   },
 

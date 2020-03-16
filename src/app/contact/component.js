@@ -1,4 +1,5 @@
 import styles from './style.scss'
+import globalStyles from '../global.scss'
 
 const address = [
   'm',
@@ -17,6 +18,7 @@ export class MyContact extends HTMLElement {
 
   async render() {
     this.classList.add(styles.myContact)
+    this.classList.add(globalStyles.mainFlexItem)
     const section = document.createElement('section')
     section.classList.add(styles.section)
     const cta = this.prepareCTA()
