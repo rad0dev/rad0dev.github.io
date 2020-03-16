@@ -1,4 +1,4 @@
-import { MainPortfolioSection } from "../common/PortfolioSection";
+import { PortfolioSection } from "../common/PortfolioSection";
 import styles from './style.scss'
 
 const address = [
@@ -10,10 +10,13 @@ const address = [
   'lp'
 ]
 
-export class MyContact extends MainPortfolioSection {
+export class MyContact extends PortfolioSection {
   constructor() {
-    super('section', styles.myContact)
-    this.section.appendChild(this.contactCTA)
+    super(false, true, styles.myContact)
+    const content = document.createElement('div')
+    content.className = styles.myContact
+    content.appendChild(this.contactCTA)
+    this.container.appendChild(content)
   }
 
   get contactCTA() {

@@ -3,6 +3,8 @@ import styles from './style.scss'
 
 export class MyFooter extends PortfolioSection {
   constructor() {
-    super('footer', styles.footer, '© 2020 Radosław Olejniczak')
+    super(`
+        <footer class="${styles.footer}">© 2020 Radosław Olejniczak</footer>
+    `)
   }
 }

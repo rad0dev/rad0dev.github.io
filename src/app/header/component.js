@@ -3,7 +3,7 @@ import styles from './style.scss'
 
 export class MyHeader extends PortfolioSection {
   constructor() {
-    super('header', styles.header)
+    super(false, false, styles.myHeader)
     this.render()
   }
 
@@ -11,6 +11,6 @@ export class MyHeader extends PortfolioSection {
     const title = this.getAttribute('text');
     const header = document.createElement('h1')
     header.innerText = title
-    this.section.appendChild(header)
+    this.container.appendChild(header)
   }
 }

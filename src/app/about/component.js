@@ -18,15 +18,17 @@ const iconLinkedIn = icon({
 
 export class MyAbout extends PortfolioSection {
   constructor() {
-    super('div', styles.aboutme, `
-        <div class="${styles.avatar}"><img src="../../img/radoslaw-olejniczak.jpeg" alt="Radoslaw Olejniczak"></div>
-        <div class="${styles.info}">
-            <h1>Radosław Olejniczak</h1>
-            <h2>Frontend Developer</h2>
-            <ul>
-                <li><a href="https://github.com/rad0dev">${iconGithub.html}</a></li>
-                <li><a href="https://www.linkedin.com/in/radosław-olejniczak-b651537b">${iconLinkedIn.html}</a></li>
-            </ul>
+    super(`
+        <div class="${styles.aboutme}">
+            <div class="${styles.avatar}"><img src="../../img/radoslaw-olejniczak.jpeg" alt="Radoslaw Olejniczak"></div>
+            <div class="${styles.info}">
+                <h1>Radosław Olejniczak</h1>
+                <h2>Frontend Developer</h2>
+                <ul>
+                    <li><a href="https://github.com/rad0dev">${iconGithub.html}</a></li>
+                    <li><a href="https://www.linkedin.com/in/radosław-olejniczak-b651537b">${iconLinkedIn.html}</a></li>
+                </ul>
+            </div>
         </div>
     `)
   }

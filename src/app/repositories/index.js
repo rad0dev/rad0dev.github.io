@@ -1,3 +1,3 @@
-import { MyRepostitories } from './component'
+import { MyRepositories } from './component'
 
-export default () => customElements.define('my-repositories', MyRepostitories)
+export default () => customElements.define('my-repositories', MyRepositories)

@@ -1,4 +1,4 @@
-import { MainPortfolioSection } from '../common/PortfolioSection'
+import { PortfolioSection } from '../common/PortfolioSection'
 import styles from './style.scss'
 
 const skills = {
@@ -26,7 +26,7 @@ const skills = {
   ]
 }
 
-export class MySkills extends MainPortfolioSection {
+export class MySkills extends PortfolioSection {
   constructor() {
     let content = ''
     for(let skillType in skills) {
@@ -35,6 +35,6 @@ export class MySkills extends MainPortfolioSection {
         <p class="${styles.skills}">${skills[skillType].join(', ')}</p>
       `
     }
-    super('section', styles.mySkills, content)
+    super(content)
   }
 }
