@@ -1,5 +1,5 @@
+import { MainPortfolioSection } from "../common/PortfolioSection";
 import styles from './style.scss'
-import globalStyles from '../global.scss'
 
 const address = [
   'm',
@@ -10,23 +10,13 @@ const address = [
   'lp'
 ]
 
-export class MyContact extends HTMLElement {
+export class MyContact extends MainPortfolioSection {
   constructor() {
-    super()
-    this.render()
+    super('section', styles.myContact)
+    this.section.appendChild(this.contactCTA)
   }
 
-  async render() {
-    this.classList.add(styles.myContact)
-    this.classList.add(globalStyles.mainFlexItem)
-    const section = document.createElement('section')
-    section.classList.add(styles.section)
-    const cta = this.prepareCTA()
-    section.appendChild(cta)
-    this.appendChild(section)
-  }
-
-  prepareCTA() {
+  get contactCTA() {
     const cta = document.createElement('strong')
     cta.classList.add(styles.cta)
     cta.innerText = 'Send me email'
@@ -44,7 +34,7 @@ export class MyContact extends HTMLElement {
       newCta.appendChild(document.createElement('br'))
       newCta.appendChild(a)
       cta.parentNode.replaceChild(newCta, cta)
-    });
+    })
     return cta
   }
 }

@@ -1,24 +1,21 @@
-import getRepos from "./service";
+import getRepos from './service'
+import { MainPortfolioSection } from '../common/PortfolioSection'
 import styles from './style.scss'
-import globalStyles from '../global.scss'
 
-export class MyRepostitories extends HTMLElement {
+export class MyRepostitories extends MainPortfolioSection {
   constructor() {
-    super()
+    super('section', styles.myRepos)
     this.render()
   }
 
   async render() {
-    const repos = (await getRepos());
-    this.classList.add(globalStyles.mainFlexItem)
-    this.innerHTML = (`
-      <div class="${globalStyles.container}">
-        <ul class="${styles.reposList}">
-            ${  repos
-                  .map(r => r.toListElements())
-                  .join('\n')}
-        </ul>
-      </div>
-    `);
+    const repos = (await getRepos())
+    this.section.innerHTML = (`
+    <ul class="${styles.reposList}">
+      ${ repos
+        .map(r => r.toListElements())
+        .join('\n') }
+    </ul>
+    `)
   }
 }

@@ -1,19 +1,16 @@
+import { PortfolioSection } from "../common/PortfolioSection";
 import styles from './style.scss'
 
-export class MyHeader extends HTMLElement {
+export class MyHeader extends PortfolioSection {
   constructor() {
-    super()
+    super('header', styles.header)
     this.render()
   }
 
   async render() {
-    const title = this.innerHTML
-    this.innerHTML = ''
-    const header = document.createElement('header')
-    header.classList.add(styles.header)
-    header.innerHTML = `
-        <h1>${title}</h1>
-    `
-    this.appendChild(header)
+    const title = this.getAttribute('text');
+    const header = document.createElement('h1')
+    header.innerText = title
+    this.section.appendChild(header)
   }
 }

@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "frontend developer portfolio",
   "scripts": {
-    "dev": "webpack --config webpack.dev.js",
+    "dev": "webpack-dev-server --config webpack.dev.js",
     "prod": "webpack",
-    "deploy": "gh-pages -d dist -b master"
-    "lint": "eslint src",
+    "deploy": "gh-pages -d dist -b master",
+    "lint": "eslint src"
   },
   "repository": {
     "type": "git",

@@ -1,15 +1,8 @@
+import { PortfolioSection } from "../common/PortfolioSection";
 import styles from './style.scss'
 
-export class MyFooter extends HTMLElement {
+export class MyFooter extends PortfolioSection {
   constructor() {
-    super()
-    this.render()
-  }
-
-  async render() {
-    const footer = document.createElement('footer')
-    footer.className = styles.footer;
-    footer.innerText = '© 2020 Radosław Olejniczak'
-    this.appendChild(footer)
+    super('footer', styles.footer, '© 2020 Radosław Olejniczak')
   }
 }

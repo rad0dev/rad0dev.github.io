@@ -1,5 +1,5 @@
+import { MainPortfolioSection } from '../common/PortfolioSection'
 import styles from './style.scss'
-import globalStyles from '../global.scss'
 
 const skills = {
   'Front-end skills': [
@@ -26,31 +26,15 @@ const skills = {
   ]
 }
 
-export class MySkills extends HTMLElement {
+export class MySkills extends MainPortfolioSection {
   constructor() {
-    super()
-    this.render()
-  }
-
-  async render() {
-    this.classList.add(globalStyles.mainFlexItem)
-    const section = document.createElement('section')
-    this.appendChild(this.skillSection)
-  }
-
-  get skillSection() {
-    const container = document.createElement('div')
-    container.classList.add(globalStyles.container)
+    let content = ''
     for(let skillType in skills) {
-      const header = document.createElement('h2')
-      const p = document.createElement('p')
-      header.classList.add(styles.header)
-      p.classList.add(styles.skills)
-      header.innerText = skillType
-      p.innerHTML += skills[skillType].join(', ')
-      container.appendChild(header)
-      container.appendChild(p)
+      content += `
+        <h2 class="${styles.header}">${skillType}</h2>
+        <p class="${styles.skills}">${skills[skillType].join(', ')}</p>
+      `
     }
-    return container
+    super('section', styles.mySkills, content)
   }
 }

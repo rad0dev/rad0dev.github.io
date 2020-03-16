@@ -1,10 +1,13 @@
+.myRepos {
+  font-size: 24px;
+}
+
 .reposList {
   list-style: none;
   padding: 0;
 }
 
 .reposListItem {
-  font-size: 24px;
   text-align: center;
   margin: 30px 0;
 
@@ -16,9 +19,9 @@
 }
 
 .repoDescription {
+  font-size: 14px;
   display: block;
   color: #666;
-  font-size: 14px;
   line-height: 1.4;
   margin-top: 10px;
 
@@ -29,8 +32,11 @@
 }
 
 @media (min-width: 576px) {
-  .reposListItem {
+  .myRepos {
     font-size: 40px;
+  }
+
+  .reposListItem {
     margin: 30px 0;
   }
 

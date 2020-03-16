@@ -1,18 +1,9 @@
+import { PortfolioSection } from '../common/PortfolioSection'
 import styles from './style.scss'
-import globalStyles from '../global.scss'
 
-export class MyNavigation extends HTMLElement {
+export class MyNavigation extends PortfolioSection {
   constructor() {
-    super()
-    this.render()
-  }
-
-  async render() {
-    const container = document.createElement('div')
-    container.classList.add(globalStyles.container)
-    const header = document.createElement('header')
-    header.classList.add(styles.header)
-    header.innerHTML = `
+    super('header', styles.header, `
         <div class="${styles.logo}">
             <a href="/">rad0dev</a>
         </div>
@@ -23,8 +14,6 @@ export class MyNavigation extends HTMLElement {
                 <li><a href="/contact/">Contact</a></li>
             </ul>
         </nav>
-    `
-    container.appendChild(header)
-    this.appendChild(container)
+    `)
   }
 }
