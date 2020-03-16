@@ -1,14 +1,13 @@
 .aboutme {
     display: flex;
-    width: 1140px;
-    padding: 0 15px;
-    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .avatar img {
-    width: 140px;
-    height: 140px;
-    margin-right: 40px;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
     border-radius: 9999px;
 }
 
@@ -24,12 +23,12 @@
     }
 
     h1 {
-        font-size: 52px;
+        font-size: 34px;
         font-weight: 900;
     }
 
     h2 {
-        font-size: 32px;
+        font-size: 18px;
         color: #999;
     }
 
@@ -46,6 +45,25 @@
 
         a {
             color: #000;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .avatar img {
+        width: 140px;
+        height: 140px;
+        margin-right: 40px;
+    }
+
+    .info {
+
+        h1 {
+            font-size: 52px;
+        }
+
+        h2 {
+            font-size: 32px;
         }
     }
 }

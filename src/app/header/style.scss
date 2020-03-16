@@ -3,8 +3,18 @@
   text-align: center;
 
   h1 {
-    font-size: 46px;
+    font-size: 32px;
     margin: 0;
-    padding: .8em 0;
+    padding: .6em 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .header {
+
+    h1 {
+      font-size: 46px;
+      padding: .8em 0;
+    }
   }
 }

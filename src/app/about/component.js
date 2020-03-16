@@ -1,4 +1,5 @@
 import styles from './style.scss'
+import globalStyles from '../global.scss'
 import { library, icon } from '@fortawesome/fontawesome-svg-core'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
@@ -23,7 +24,8 @@ export class MyAbout extends HTMLElement {
 
   async render() {
     const container = document.createElement('div')
-    container.className = styles.aboutme
+    container.classList.add(styles.aboutme)
+    container.classList.add(globalStyles.container)
     container.innerHTML = `
         <div class="${styles.avatar}"><img src="../../img/radoslaw-olejniczak.jpeg" alt="Radoslaw Olejniczak"></div>
         <div class="${styles.info}">

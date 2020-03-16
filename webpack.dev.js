@@ -16,16 +16,16 @@ module.exports = {
       template: 'src/index.html'
     }),
     new HtmlWebpackPlugin({
-      template: 'src/my-repositories/index.html',
-      filename: "my-repositories/index.html"
+      template: 'src/repositories/index.html',
+      filename: "repositories/index.html"
     }),
     new HtmlWebpackPlugin({
       template: 'src/contact/index.html',
       filename: "contact/index.html"
     }),
     new HtmlWebpackPlugin({
-      template: 'src/cv/index.html',
-      filename: "cv/index.html"
+      template: 'src/skills/index.html',
+      filename: "skills/index.html"
     }),
     new CopyPlugin([
       {

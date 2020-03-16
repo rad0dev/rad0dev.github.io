@@ -1,13 +1,11 @@
 .header {
     display: flex;
     justify-content: space-between;
-    width: 1140px;
-    padding: 0 15px;
     margin: 20px auto;
 }
 
 .logo a {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 900;
     text-decoration: none;
     color: #333;
@@ -18,19 +16,39 @@
         display: flex;
         list-style: none;
         padding: 0;
-        margin: 10px 0;
+        margin: 8px 0;
 
         li {
-            margin: 0 0 0 1em;
+            margin: 0 0 0 .6em;
             line-height: 1;
 
             a {
                 text-decoration: none;
                 color: #666;
                 transition: color .3s ease;
+                font-size: 12px;
 
                 &:hover {
                     color: #000;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .logo a {
+        font-size: 32px;
+    }
+
+    .menu {
+        ul {
+
+            li {
+                margin: 0 0 0 1em;
+
+                a {
+                    font-size: 14px;
                 }
             }
         }

@@ -26,7 +26,7 @@ const skills = {
   ]
 }
 
-export class MyCV extends HTMLElement {
+export class MySkills extends HTMLElement {
   constructor() {
     super()
     this.render()

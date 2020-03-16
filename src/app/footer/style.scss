@@ -3,4 +3,11 @@
     color: #888;
     text-align: center;
     padding: 20px;
+    font-size: 12px;
+}
+
+@media (min-width: 576px) {
+    .footer {
+        font-size: 16px;
+    }
 }

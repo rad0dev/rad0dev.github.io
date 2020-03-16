@@ -5,7 +5,7 @@ import initFooter from './footer'
 import initRepositories from './repositories'
 import initHeader from './header'
 import initContact from './contact'
-import initCV from './cv'
+import initSkills from './skills'
 
 export const App = {
   init() {
@@ -15,7 +15,7 @@ export const App = {
     initRepositories()
     initHeader()
     initContact()
-    initCV()
+    initSkills()
     this.initComponents()
   },
 

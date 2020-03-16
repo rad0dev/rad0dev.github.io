@@ -1,4 +1,5 @@
 import styles from './style.scss'
+import globalStyles from '../global.scss'
 
 export class MyNavigation extends HTMLElement {
   constructor() {
@@ -7,6 +8,8 @@ export class MyNavigation extends HTMLElement {
   }
 
   async render() {
+    const container = document.createElement('div')
+    container.classList.add(globalStyles.container)
     const header = document.createElement('header')
     header.classList.add(styles.header)
     header.innerHTML = `
@@ -15,12 +18,13 @@ export class MyNavigation extends HTMLElement {
         </div>
         <nav class="${styles.menu}">
             <ul>
-                <li><a href="/cv/">CV</a></li>
-                <li><a href="/my-repositories/">My repositories</a></li>
+                <li><a href="/skills/">Skills</a></li>
+                <li><a href="/repositories/">Repositories</a></li>
                 <li><a href="/contact/">Contact</a></li>
             </ul>
         </nav>
     `
-    this.appendChild(header)
+    container.appendChild(header)
+    this.appendChild(container)
   }
 }
